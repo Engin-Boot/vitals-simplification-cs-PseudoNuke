@@ -1,25 +1,11 @@
 using System;
 using System.Diagnostics;
-
-
-namespace Vitals
+class ExpectTrue
 {
-
-        class ExpectFalse
-        {
-                
-                static void ExpectFalse(bool expression)
-                {
-                        if(expression) {
-                                
-                                 Console.WriteLine("Expected false, but got true");
-                                 
-                                 Environment.exit(1);
-                                 
-                        }
-                 
-                 }
- 
+    static void ExpectFalse(bool expression) {
+        if(expression) {
+            Console.WriteLine("Expected false, but got true");
+            Environment.Exit(1);
         }
-
-}
+    }
+ } 

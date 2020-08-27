@@ -2,7 +2,7 @@ using System;
 using System.Diagnostics;
 namespace Vitals{
     
-    class VitalsChecker
+    class Checker
     {
         static bool vitalsAreOk(float bpm, float spo2, float respRate) {
             if(bpm < 70 || bpm > 150) {

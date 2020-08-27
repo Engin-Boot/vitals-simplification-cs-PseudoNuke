@@ -2,7 +2,7 @@ using System;
 
 namespace Vitals
 {
-  class Test
+  class Checker
   {
     static int Main()
     {

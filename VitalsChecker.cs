@@ -5,14 +5,12 @@ namespace Vitals{
     class VitalsChecker
     {
         static bool vitalsAreOk(float bpm, float spo2, float respRate) {
-            if(bpm < 70 || bpm > 150) {
+            var bpm_check = (bpm < 70 || bpm > 150);
+            var spo2_check = (spo2 < 90);
+            var respRate_check = (respRate < 30 || respRate > 95);
+            if( bpm_check || spo2_check || respRate_check )
                 return false;
-            } else if(spo2 < 90) {
-                return false;
-            } else if(respRate < 30 || respRate > 95) {
-                return false;
-            }
             return true;
         }
-    }
+    }   
 }
